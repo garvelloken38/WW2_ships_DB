@@ -10,7 +10,7 @@ services:
       - POSTGRES_PORT=5432
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
-      - ./docs_e:/docker-entrypoint-initdb.d
+      - ./scripts:/docker-entrypoint-initdb.d
       - postgres_data:/var/lib/postgresql/data/pgdata
     ports:
       - "5432:5432"
@@ -30,4 +30,5 @@ services:
 volumes:
   postgres_data:
   data_pgadmin:
+
 
