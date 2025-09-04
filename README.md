@@ -30,6 +30,7 @@ https://sql-ex.ru/help/select13.php#db_3
 Для замены текущего капитана в ships, используется процедура update_captain
 
 Запустить контейнер из папки с docker-compose.yml и scripts и открыть страницу pgadmin (у меня - localhost:8080), email = admin@admin.com, password = root. 
+
 Зайти на сервер:
 Адрес - postgres_db
 Хост - 5432
@@ -37,6 +38,7 @@ https://sql-ex.ru/help/select13.php#db_3
 Пароль - postgres
 
 Если таблицы создались, но ничем не заполнены, выполнить:
+
 docker exec -i postgres_db psql -U postgres -d pg_db < scripts/2_process.sql
 docker exec -i postgres_db psql -U postgres -d pg_db < scripts/3_dml.sql
 
