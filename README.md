@@ -53,3 +53,7 @@ docker exec -i postgres_db psql -U postgres -d pg_db < scripts/2_process.sql
 
 docker exec -i postgres_db psql -U postgres -d pg_db < scripts/3_dml.sql
 
+Далее для запуска запросов выполнить: docker cp ./scripts pgadmin:/var/lib/pgadmin/storage/admin_admin.com 
+
+После чего их можно открывать в Query Tools
+
